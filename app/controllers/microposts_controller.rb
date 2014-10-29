@@ -72,6 +72,3 @@ class MicropostsController < ApplicationController
       params.require(:micropost).permit(:content, :user_id)
     end
 end
-class Micropost < ActiveRecord::Base
-	validates :content, length: { maximum: 140 }
-end
